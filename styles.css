@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+}
+
+header nav {
+    background-color: #111; /* Fondo oscuro del encabezado */
+    color: turquoise; /* Texto del encabezado en turquesa */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+header nav a {
+    color: turquoise; /* Enlaces en turquesa */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: white; /* Enlaces en blanco al pasar el mouse */
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: turquoise; /* Icono del menú en turquesa */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.center-text h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333; /* Cambiado a gris oscuro */
+}
+
+.center-text p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333; /* Cambiado a gris oscuro */
+}
+
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.service-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service-image img, .service-text {
+        width: 100%;
+    }
+
+    .service-text {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+
+.feature-image, .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #111; /* Fondo oscuro del pie de página */
+    color: turquoise; /* Texto del pie de página en turquesa */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
